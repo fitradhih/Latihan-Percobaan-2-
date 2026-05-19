@@ -13,8 +13,8 @@ body {
 }
 
 /* 2. STYLE UNTUK NAVBAR (Bar Atas) */
-.navbar {
-    background-color: #0edb29; /* Biru tua seperti gambar */
+.navbar2 {
+    background-color: #0edb29; 
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -22,14 +22,21 @@ body {
     align-items: center;
 }
 
+.navbar3 {
+    background-color: #000000; 
+    color: white;
+    padding: 15px 20px;
+    justify-content: space-between; /* Membuat logo di kiri, profil di kanan */
+}
+
 .logo {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* 3. STYLE UNTUK AREA KONTEN UTAMA */
-.konten-utama {
-    padding: 30px 40px;
+.konten-kedua {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* 4. STYLE UNTUK WADAH 4 KOTAK (Layout-nya) */
