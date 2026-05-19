@@ -1,0 +1,88 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mengatur warna latar belakang halaman web */
+body {
+    background-color: #f4f6f9; /* Warna abu-abu terang biar gak silau */
+    color: #333333;
+}
+
+/* 2. STYLE UNTUK NAVBAR (Bar Atas) */
+.navbar {
+    background-color: #0edb29; /* Biru tua seperti gambar */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Membuat logo di kiri, profil di kanan */
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 3. STYLE UNTUK AREA KONTEN UTAMA */
+.konten-utama {
+    padding: 30px 40px;
+}
+
+/* 4. STYLE UNTUK WADAH 4 KOTAK (Layout-nya) */
+.wadah-kotak {
+    display: flex; /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
+    gap: 20px; /* Memberi jarak antar kotak */
+    flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
+}
+
+/* Style umum untuk setiap kotak ringkasan */
+.kotak {
+    flex: 1; /* Membuat setiap kotak punya lebar yang sama rata */
+    min-width: 220px; /* Lebar minimal kotak agar tidak terlalu gepeng */
+    padding: 20px;
+    border-radius: 20px; /* Membuat sudut kotak jadi agak melengkung/rounded */
+    color: white; /* Semua tulisan di dalam kotak berwarna putih */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Memberi efek bayangan halus */
+}
+
+/* Mengatur ukuran teks di dalam kotak */
+.kotak h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.kotak p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.kotak span {
+    font-size: 12px;
+    opacity: 0.8; /* Membuat teks tanggal agak sedikit transparan */
+}
+
+/* 5. MEMBERI WARNA SPESIFIK PADA MASING-MASING KOTAK */
+.kotak-biru {
+    background-color: #3b82f6;
+    border-left: 5px solid #1d4ed8; /* Garis aksen vertikal di sebelah kiri */
+}
+
+.kotak-hijau {
+    background-color: #10b981;
+    border-left: 5px solid #047857;
+}
+
+.kotak-oranye {
+    background-color: #f59e0b;
+    border-left: 5px solid #b45309;
+}
+
+.kotak-merah {
+    background-color: #ef4444;
+    border-left: 5px solid #b91c1c;
+}
