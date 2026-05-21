@@ -1,7 +1,7 @@
 
 * { /* Selector */
     box-sizing: border-box; /* Digunakan untuk menyesuaikan box dengan ukuran layar */ 
-    margin: 0; 
+    margin: 0; /*  */
     padding: 0;
     font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -95,6 +95,16 @@ body {
     background-color: #ef4444;      /* Sesuai namanya mengganti warna background color */
     border-left: 5px solid #b91c1c; /* Ada sedikit garis aksen vertikal di sebelah kiri */
 } 
+.coba {
+    display: flex; /* Membuat kotak coba menjadi elemen blok agar bisa diatur ukurannya */
+    flex-wrap: wrap;
+    width: 300px;
+    height: auto;
+    background-color: #6b7280;      /* Sesuai namanya mengganti warna background color */
+    border-left: 5px solid #374151; /* Ada sedikit garis aksen vertikal di sebelah kiri */
+    float: left; /* Membuat kotak coba berada di sebelah kanan */
+    margin: 10px; /* Memberi jarak antara kotak coba dengan elemen lain */
+}
 /* 1. MANTRA UTAMA MELEBURKAN KOTAK GANDA */
 table {
     border-collapse: collapse; /* Ini yang bikin garisnya jadi nyatu! */
