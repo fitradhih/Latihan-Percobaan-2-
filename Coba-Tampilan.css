@@ -1,0 +1,115 @@
+
+* { /* Selector */
+    box-sizing: border-box; /* Digunakan untuk menyesuaikan box dengan ukuran layar */ 
+    margin: 0; 
+    padding: 0;
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mengatur warna latar belakang halaman web */
+body {
+    background-color: #ffffff; /* Sesuai namanya mengganti warna background color */
+    color: #333333;            /* Warna teks */
+}
+
+.navbar {
+    background-color: #ffffff; /* Sesuai namanya mengganti warna background color */
+    color: rgb(0, 0, 0);       /* Warna teks */
+    display: flex;               /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
+    padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
+    align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */
+    border-radius: 50px;         /* Membuat sudut navbar menjadi melengkung/rounded */
+    list-style: none;            /* Menghilangkan bullet points pada navbar jika menggunakan elemen list */  
+}
+
+.logo{
+    width: 180px;      /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto;      /* Menyesuaikan tinggi ukuran logo auto */
+    margin-right: 5px; /* Memberi jarak antara logo dan tulisan */
+}
+
+.navbar2 {
+    background-color: #0edb29; /* Sesuai namanya mengganti warna background color */
+    color: white;              /* Warna teks */
+    padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
+    margin: 0 auto;              /* Membuat navbar berada di tengah halaman */
+    text-align: center;          /* Mengatur teks agar berada di tengah navbar */
+}
+
+.welcome {
+    font-size: 20px;        /* Ukuran teks untuk pesan selamat datang */
+    font-weight: bold;      /* Membuat teks menjadi tebal/bold */
+}
+
+/* 4. STYLE UNTUK WADAH 4 KOTAK (Layout-nya) */
+.wadah-kotak {
+    display: flex;   /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
+    gap: 20px;       /* Memberi jarak antar kotak */
+    flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
+}
+
+/* Style umum untuk setiap kotak ringkasan */
+.kotak {
+    flex: 1;                                        /* Membuat setiap kotak punya lebar yang sama rata */
+    min-width: 220px;                               /* Lebar minimal kotak agar tidak terlalu gepeng */
+    padding: 20px;
+    border-radius: 20px;                            /* Membuat sudut kotak jadi agak melengkung/rounded */
+    color: white;                                 /* Semua tulisan di dalam kotak berwarna putih */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
+}
+
+/* Mengatur ukuran teks di dalam kotak */
+.kotak h3 {
+    font-size: 24px;     /* Ukuran teks untuk Jumlah Rp */
+    margin-bottom: 12px; /* Memberi jarak antara judul dan informasi utama di dalam kotak */
+}
+
+.kotak p {
+    font-size: 15px;     /* Ukuran teks untuk informasi utama di dalam kotak */
+    font-weight: 500;    /* Membuat teks di dalam kotak sedikit lebih tebal */
+    margin-bottom: 12px; /* Memberi jarak antara teks dan elemen berikutnya di dalam kotak */
+}
+
+.kotak span {
+    font-size: 12px; /* Ukuran teks untuk tanggal */
+    opacity: 0.8;    /* Membuat teks tanggal agak sedikit transparan */
+}
+
+/* 5. MEMBERI WARNA SPESIFIK PADA MASING-MASING KOTAK */
+.kotak-biru {
+    background-color: #3b82f6;      /* Sesuai namanya mengganti warna background color */
+    border-left: 5px solid #1d4ed8; /* Ada sedikit garis aksen vertikal di sebelah kiri */
+}
+
+.kotak-hijau {
+    background-color: #10b981;      /* Sesuai namanya mengganti warna background color */
+    border-left: 5px solid #047857; /* Ada sedikit garis aksen vertikal di sebelah kiri */
+}
+
+.kotak-oranye {
+    background-color: #f59e0b;      /* Sesuai namanya mengganti warna background color */
+    border-left: 5px solid #b45309; /* Ada sedikit garis aksen vertikal di sebelah kiri */
+}
+
+.kotak-merah {
+    background-color: #ef4444;      /* Sesuai namanya mengganti warna background color */
+    border-left: 5px solid #b91c1c; /* Ada sedikit garis aksen vertikal di sebelah kiri */
+} 
+/* 1. MANTRA UTAMA MELEBURKAN KOTAK GANDA */
+table {
+    border-collapse: collapse; /* Ini yang bikin garisnya jadi nyatu! */
+    width: 50%;                /* Biar tabelnya membentang penuh selebar wadahnya */
+    text-align: left;          /* Teks rata kiri biar gampang dibaca */
+}
+
+/* 2. MEMBERI GARIS DAN JARAK PADA ISI TABEL */
+th, td {
+    border: 1px solid #dee2e6; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
+    padding: 12px 15px;          /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
+}
+
+/* 3. MEMPERCANTIK JUDUL KOLOM (HEADER) */
+th {
+    background-color: #1e3a8a; /* Menggunakan warna background biru dibagian th */
+    color: white;              /* Teks di th menjadi putih */
+}
