@@ -153,14 +153,19 @@ th {
     margin-left: auto; /* Memberi jarak antara menu-5 dengan elemen lain */
 }
 
+.pageination{
+    display: flex;
+}
+
 .pageination p{
     border: 1px solid #0043b8; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
-    float: left; /* Membuat pageination berada di sebelah kanan */
-    margin-left: auto; /* Memberi jarak antara pageination dengan elemen lain */
 }
 
 .tabel{
     width: 100%; /* Membuat tabel membentang penuh selebar wadahnya */
-    background-color: #ff0000; /* Sesuai namanya mengganti warna background color */
     height: auto; /* Menyesuaikan tinggi tabel auto */
+}
+
+.clear{
+    clear: both;
 }
