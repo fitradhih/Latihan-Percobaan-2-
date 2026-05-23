@@ -10,7 +10,7 @@
 
     <nav class="navbar">
         <img src="DKS-polos.png" alt="Logo DKS" class="logo">
-        <ul>
+        <ul class="menu">
             <li class="menu-1">Multiple Dashboard</li>
             <li class="menu-2">Notifikasi</li>
             <li class="menu-3">Pendapatan</li>
@@ -57,11 +57,15 @@
         </div>
 
         <br><br>
-
+        <div class="tabel">
                 <table>
                     <tr>
                         <th>Nama Siswa</th>
-                        <th>Kelas</th>
+                        <th><select name="Kelas" id="kelas">
+                        <option value="kelas1">Kelas I</option>
+                        <option value="kelas2">Kelas II</option>
+                        <option value="kelas3">Kelas III</option>
+                        </select></th>
                         <th>Tahun Ajaran</th>
                         <th>Jumlah SPP Semester Ganjil</th>
                         <th>Status Pembayaran</th>
@@ -74,35 +78,42 @@
                         <td>Lunas</td>
                     </tr>
                     <tr>
-                        <td>Bambang Pamungkas</td>
+                        <td>Budi Hartono</td>
                         <td>I</td>
                         <td>2025/2026</td>
                         <td>500.000</td>
                         <td>Lunas</td>
                     </tr>
                     <tr>
-                        <td>Bambang Pamungkas</td>
+                        <td>Laksana Hartanti</td>
                         <td>I</td>
-                        <td>2025/2026s</td>
+                        <td>2025/2026</td>
                         <td>500.000</td>
                         <td>Lunas</td>
                     </tr>
                     <tr>
-                        <td>Bambang Pamungkas</td>
+                        <td>Kurniawan</td>
                         <td>I</td>
-                        <td>2025/2026sss</td>
+                        <td>2025/2026</td>
                         <td>500.000</td>
                         <td>Lunas</td>
                     </tr>
                     <tr>
-                        <td>Bambang Pamungkas</td>
+                        <td>Gilang Kartono</td>
                         <td>I</td>
-                        <td>2025/2026si</td>
+                        <td>2025/2026</td>
                         <td>500.000</td>
                         <td>Lunas</td>
                     </tr>
                     
                 </table>
-
+            
+            <div class="pageination">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>next</p>
+            </div>
+        </div>
     </body>
 </html>

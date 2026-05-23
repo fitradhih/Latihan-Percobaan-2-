@@ -18,7 +18,6 @@ body {
     display: flex;               /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
     padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
     align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */
-    border-radius: 50px;         /* Membuat sudut navbar menjadi melengkung/rounded */
     list-style: none;            /* Menghilangkan bullet points pada navbar jika menggunakan elemen list */  
 }
 
@@ -122,4 +121,46 @@ th, td {
 th {
     background-color: #1e3a8a; /* Menggunakan warna background biru dibagian th */
     color: white;              /* Teks di th menjadi putih */
+}
+
+.menu-1{
+    float: left; /* Membuat menu-1 berada di sebelah kiri */
+    list-style: none; /* Menghilangkan bullet points pada menu-1 jika menggunakan elemen list */
+    margin: 0px 50px; /* Memberi jarak antara menu-1 dengan elemen lain */
+}
+
+.menu-2{
+    float: left; /* Membuat menu-2 berada di sebelah kanan */
+    list-style: none; /* Menghilangkan bullet points pada menu-2 jika menggunakan elemen list */
+    margin: 0px 50px; /* Memberi jarak antara menu-2 dengan elemen lain */
+}
+
+.menu-3{
+    float: left; /* Membuat menu-3 berada di sebelah kanan */
+    list-style: none; /* Menghilangkan bullet points pada menu-3 jika menggunakan elemen list */
+    margin: 0px 50px; /* Memberi jarak antara menu-3 dengan elemen lain */
+}
+
+.menu-4{
+    float: left; /* Membuat menu-4 berada di sebelah kanan */
+    list-style: none; /* Menghilangkan bullet points pada menu-4 jika menggunakan elemen list */
+    margin: 0px 50px; /* Memberi jarak antara menu-4 dengan elemen lain */
+}
+
+.menu{
+    float: left; /* Membuat menu-5 berada di sebelah kanan */
+    list-style: none; /* Menghilangkan bullet points pada menu-5 jika menggunakan elemen list */
+    margin-left: auto; /* Memberi jarak antara menu-5 dengan elemen lain */
+}
+
+.pageination p{
+    border: 1px solid #0043b8; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
+    float: left; /* Membuat pageination berada di sebelah kanan */
+    margin-left: auto; /* Memberi jarak antara pageination dengan elemen lain */
+}
+
+.tabel{
+    width: 100%; /* Membuat tabel membentang penuh selebar wadahnya */
+    background-color: #ff0000; /* Sesuai namanya mengganti warna background color */
+    height: auto; /* Menyesuaikan tinggi tabel auto */
 }
