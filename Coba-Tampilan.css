@@ -24,7 +24,12 @@ body {
 .logo{
     width: 180px;      /* Sesuaikan ukuran logo sesuai kebutuhan */
     height: auto;      /* Menyesuaikan tinggi ukuran logo auto */
-    margin-right: 5px; /* Memberi jarak antara logo dan tulisan */
+}
+
+.menu{
+    float: left; /* Membuat menu-5 berada di sebelah kanan */
+    list-style: none; /* Menghilangkan bullet points pada menu-5 jika menggunakan elemen list */
+    margin-left: auto; /* Memberi jarak antara menu-5 dengan elemen lain */
 }
 
 .menu-1{
@@ -51,31 +56,24 @@ body {
     margin: 0px 50px; /* Memberi jarak antara menu-4 dengan elemen lain */
 }
 
-.menu{
-    float: left; /* Membuat menu-5 berada di sebelah kanan */
-    list-style: none; /* Menghilangkan bullet points pada menu-5 jika menggunakan elemen list */
-    margin-left: auto; /* Memberi jarak antara menu-5 dengan elemen lain */
-}
-
-.navbar2 {
+.welcome {
     background-color: #354fc5; /* Sesuai namanya mengganti warna background color */
     color: white;              /* Warna teks */
     padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
-    margin: 0 auto;              /* Membuat navbar berada di tengah halaman */
     text-align: center;          /* Mengatur teks agar berada di tengah navbar */
     font-weight: bold;           /* Membuat teks menjadi tebal/bold */
     font-size: 20px;             /* Ukuran teks untuk pesan selamat datang */
 }
 
 /* 4. STYLE UNTUK WADAH 4 KOTAK (Layout-nya) */
-.wadah-kotak {
+.wadah-kotak-saldo {
     display: flex;   /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
     gap: 10px;       /* Memberi jarak antar kotak */
     flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
     margin: 20px 30px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
 }
 
-.wadah-kotak2 {
+.wadah-kotak-tabel-dan-grafik {
     display: flex;   /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
     align-items: stretch; /* Mengatur agar kotak-kotak berada di tengah secara vertikal */
     gap: 10px;       /* Memberi jarak antar kotak */
@@ -85,7 +83,7 @@ body {
 
 .kotak {
     flex: 1;                                        /* Membuat setiap kotak punya lebar yang sama rata */
-    min-width: 220px;                               /* Lebar minimal kotak agar tidak terlalu gepeng */
+    min-width: 100px;                               /* Lebar minimal kotak agar tidak terlalu gepeng */
     padding: 20px;
     margin: 20px;                                   /* Memberi jarak vertikal antara kotak dengan elemen lain */
     border-radius: 20px;                            /* Membuat sudut kotak jadi agak melengkung/rounded */
@@ -96,16 +94,15 @@ body {
 /* Mengatur ukuran teks di dalam kotak */
 .kotak h3 {
     font-size: 24px;     /* Ukuran teks untuk Jumlah Rp */
-    margin-bottom: 12px; /* Memberi jarak antara judul dan informasi utama di dalam kotak */
+    padding-bottom: 10px; /* Memberi jarak antara teks Jumlah Rp dengan informasi lainnya di dalam kotak */
+}
+
+.kotak h4 {
+    font-size: 15px;     /* Ukuran teks untuk informasi utama di dalam kotak */
+    padding-bottom: 12px; /* Memberi jarak antara teks dan elemen berikutnya di dalam kotak */
 }
 
 .kotak p {
-    font-size: 15px;     /* Ukuran teks untuk informasi utama di dalam kotak */
-    font-weight: 500;    /* Membuat teks di dalam kotak sedikit lebih tebal */
-    margin-bottom: 12px; /* Memberi jarak antara teks dan elemen berikutnya di dalam kotak */
-}
-
-.kotak span {
     font-size: 12px; /* Ukuran teks untuk tanggal */
     opacity: 0.8;    /* Membuat teks tanggal agak sedikit transparan */
 }
@@ -158,8 +155,9 @@ th {
 }
 
 .pageination p{
-    border: 1px solid #0043b8; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
-    padding: 2px 12px; /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
+    font-size: 17px; /* Ukuran teks untuk tanggal */
+    border: 2px solid #0043b8; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
+    padding: 2px 10px; /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
 }
 
 .tabel{
