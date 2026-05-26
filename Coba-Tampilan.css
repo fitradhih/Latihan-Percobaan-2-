@@ -70,16 +70,24 @@ body {
 /* 4. STYLE UNTUK WADAH 4 KOTAK (Layout-nya) */
 .wadah-kotak {
     display: flex;   /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
-    gap: 20px;       /* Memberi jarak antar kotak */
+    gap: 10px;       /* Memberi jarak antar kotak */
     flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
+    margin: 20px 30px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
 }
 
-/* Style umum untuk setiap kotak ringkasan */
+.wadah-kotak2 {
+    display: flex;   /* Ini mantra ajaib biar kotak-kotak berjejer ke samping! */
+    align-items: stretch; /* Mengatur agar kotak-kotak berada di tengah secara vertikal */
+    gap: 10px;       /* Memberi jarak antar kotak */
+    flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
+    margin: 10px 100px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
+}
+
 .kotak {
     flex: 1;                                        /* Membuat setiap kotak punya lebar yang sama rata */
     min-width: 220px;                               /* Lebar minimal kotak agar tidak terlalu gepeng */
     padding: 20px;
-    margin: 20px;                                /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    margin: 20px;                                   /* Memberi jarak vertikal antara kotak dengan elemen lain */
     border-radius: 20px;                            /* Membuat sudut kotak jadi agak melengkung/rounded */
     color: white;                                 /* Semua tulisan di dalam kotak berwarna putih */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
@@ -127,13 +135,13 @@ body {
 table {
     border-collapse: collapse; /* Ini yang bikin garisnya jadi nyatu! */
     width: 100%;                /* Biar tabelnya membentang penuh selebar wadahnya */
-    text-align: left;          /* Teks rata kiri biar gampang dibaca */
+    text-align: left;          /* Mengatur teks di dalam tabel agar rata kiri */
 }
 
 /* 2. MEMBERI GARIS DAN JARAK PADA ISI TABEL */
 th, td {
     border: 1px solid #000000; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
-    padding: 12px 15px;          /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
+    padding: 10px 10px;          /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
 }
 
 /* 3. MEMPERCANTIK JUDUL KOLOM (HEADER) */
@@ -151,21 +159,44 @@ th {
 
 .pageination p{
     border: 1px solid #0043b8; /* Memberi garis tipis dengan warna sesuai kebutuhan*/
-    padding: 3px 12px; /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
+    padding: 2px 12px; /* Memberi ruang bernapas (jarak) di dalam kotak biar gak sumpek */
 }
 
 .tabel{
     background-color: white; /* Sesuai namanya mengganti warna background color */
+    flex: 3; /* Membuat tabel memiliki lebar yang sama dengan grafik */
     color: black; /* Warna teks */
-    width: 50%; /* Membuat tabel membentang penuh selebar wadahnya */
-    height: auto; /* Menyesuaikan tinggi tabel auto */
     float: left; /* Membuat tabel berada di sebelah kiri */
 }
 
 .grafik{
     background-color: white; /* Sesuai namanya mengganti warna background color */
+    flex: 1; /* Membuat grafik memiliki lebar yang sama dengan tabel */
     color: black; /* Warna teks */
-    width: 20%; /* Membuat tabel membentang penuh selebar wadahnya */
-    height: auto; /* Menyesuaikan tinggi tabel auto */
+    float: left; /* Membuat tabel berada di sebelah kanan */
+}
+
+.diagram-lingkaran{
+    width: 370px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
+}
+
+.grafik2{
+    background-color: white; /* Sesuai namanya mengganti warna background color */
+    flex: 1; /* Membuat grafik memiliki lebar yang sama dengan tabel */
+    color: black; /* Warna teks */
+    float: left; /* Membuat tabel berada di sebelah kanan */
+}
+
+.diagram-lingkaran2{
+    width: 200px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
+}
+
+.tabel2{
+    background-color: white; /* Sesuai namanya mengganti warna background color */
+    flex: 3; /* Membuat tabel memiliki lebar yang sama dengan grafik */
+    color: black; /* Warna teks */
     float: left; /* Membuat tabel berada di sebelah kiri */
 }
+
