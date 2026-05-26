@@ -21,14 +21,9 @@
         </ul>
     </nav>
 
-    <div class="navbar2">
-        <div class="welcome">Welcome to Dashboard Keuangan Sederhana</div>
-    </div>
-
-    <br><br>
+    <div class="navbar2">Welcome to Dashboard Keuangan Sederhana</div>
 
     <div class="wadah-kotak">
-
         <div class="kotak kotak-biru">
             <h3>Rp1.000.000</h3>
             <p>Saldo Anda</p>
@@ -49,18 +44,94 @@
 
         <div class="kotak kotak-merah">
             <h3>Rp2.000.000</h3>
-            <p>Keseluruhan SPP Yang Sudah Di Bayar</p>
+            <p>Keseluruhan SPP Yang Sudah Dibayar</p>
             <span>A.N Bambang Pamungkas</span>
-        </div>
-        <div class="coba">
-            <h3>Kotak Coba</h3>
-            <p>Kotak Coba 2</p>
-            <span>Kotak Coba 3</span>
         </div>
     </div>
 
-    <br><br>
-    <div class="tabel">
+        <div class="kotak tabel">
+            <table>
+                <tr>
+                    <th>Nama Siswa</th>
+                    <th><select name="Kelas" id="kelas">
+                        <option value="kelas1">Kelas I</option>
+                        <option value="kelas2">Kelas II</option>
+                        <option value="kelas3">Kelas III</option>
+                        <option value="kelas4">Kelas IV</option>
+                        <option value="kelas5">Kelas V</option>
+                        <option value="kelas6">Kelas VI</option>
+                        </select></th>
+                    <th><select name="Tahun" id="tahun">
+                        <option value="tahun1">Tahun Ajaran 2025/2026</option>
+                        <option value="tahun2">Tahun Ajaran 2026/2027</option>
+                        <option value="tahun3">Tahun Ajaran 2027/2028</option>
+                        </select></th>
+                    <th><select name="Semester" id="semester">
+                        <option value="semesterganjil">Jumlah SPP Semester Ganjil</option>
+                        <option value="semestergenap">Jumlah SPP Semester Genap</option>
+                        </select></th>
+                    <th>Status Pembayaran</th>
+                </tr>
+                <tr>
+                    <td>Bambang Pamungkas</td>
+                    <td>I</td>
+                    <td>2025/2026</td>
+                    <td>500.000</td>
+                    <td>Lunas</td>
+                </tr>
+                <tr>
+                    <td>Budi Hartono</td>
+                    <td>I</td>
+                    <td>2025/2026</td>
+                    <td>500.000</td>
+                    <td>Lunas</td>
+                </tr>
+                <tr>
+                    <td>Laksana Hartanti</td>
+                    <td>I</td>
+                    <td>2025/2026</td>
+                    <td>500.000</td>
+                    <td>Lunas</td>
+                </tr>
+                <tr>
+                    <td>Kurniawan</td>
+                    <td>I</td>
+                    <td>2025/2026</td>
+                    <td>500.000</td>
+                    <td>Lunas</td>
+                </tr>
+                <tr>
+                    <td>Gilang Kartono</td>
+                    <td>I</td>
+                    <td>2025/2026</td>
+                    <td>500.000</td>
+                    <td>Lunas</td>
+                </tr>
+
+            </table>
+
+            <div class="pageination">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>next</p>
+            </div>
+
+        </div>
+
+    <div class="kotak grafik">
+        Status Pembayaran
+        <select name="Kelas" id="kelas">
+            <option value="kelas1">Kelas I</option>
+            <option value="kelas2">Kelas II</option>
+            <option value="kelas3">Kelas III</option>
+            <option value="kelas4">Kelas IV</option>
+            <option value="kelas5">Kelas V</option>
+            <option value="kelas6">Kelas VI</option>
+        </select>
+    </div>
+
+    <div class="tabel2">
         <table>
             <tr>
                 <th>Nama Siswa</th>
@@ -110,7 +181,7 @@
             </tr>
 
         </table>
-        
+
         <div class="pageination">
             <p>1</p>
             <p>2</p>
