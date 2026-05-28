@@ -18,6 +18,8 @@ body {
     display: flex;               /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
     padding: 2px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
     align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */ 
+    font-weight: bold;           /* Membuat teks menjadi tebal/bold */
+    font-size: 16px;             /* Ukuran teks untuk navbar */
 }
 
 .logo{
@@ -36,9 +38,17 @@ body {
     margin: 0px 50px; /* Memberi jarak antara menu-1 dengan elemen lain */
 }
 
+.menu-1:hover{
+    font-size: 18px; /* Ukuran teks untuk menu-1 saat hover */
+}
+
 .menu-2{
     float: left; /* Membuat menu-2 berada di sebelah kanan */
     margin: 0px 50px; /* Memberi jarak antara menu-2 dengan elemen lain */
+}
+
+.menu-2:hover{
+    font-size: 18px; /* Ukuran teks untuk menu-2 saat hover */
 }
 
 .menu-3{
@@ -46,9 +56,17 @@ body {
     margin: 0px 50px; /* Memberi jarak antara menu-3 dengan elemen lain */
 }
 
+.menu-3:hover{
+    font-size: 18px; /* Ukuran teks untuk menu-3 saat hover */
+}
+
 .menu-4{
     float: left; /* Membuat menu-4 berada di sebelah kanan */
     margin: 0px 50px; /* Memberi jarak antara menu-4 dengan elemen lain */
+}
+
+.menu-4:hover{
+    font-size: 18px; /* Ukuran teks untuk menu-4 saat hover */
 }
 
 .welcome {
@@ -73,7 +91,7 @@ body {
     align-items: stretch; /* Mengatur agar kotak-kotak berada di tengah secara vertikal */
     gap: 10px;       /* Memberi jarak antar kotak */
     flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
-    margin: 10px 100px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
+    margin: 20px 100px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
 }
 
 .kotak {
@@ -170,8 +188,9 @@ th {
 }
 
 .diagram-lingkaran{
-    width: 370px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    width: 380px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
     height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
+    margin-right: 150px; /* Memberi jarak antara diagram lingkaran dengan elemen lain */
 }
 
 .grafik2{
@@ -182,7 +201,8 @@ th {
 }
 
 .diagram-lingkaran2{
-    width: 200px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    margin-left: 60px;
+    width: 300px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
     height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
 }
 
