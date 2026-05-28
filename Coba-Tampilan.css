@@ -25,6 +25,7 @@ body {
 .logo{
     width: 180px;      /* Sesuaikan ukuran logo sesuai kebutuhan */
     height: auto;      /* Menyesuaikan tinggi ukuran logo auto */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover pada logo */
 }
 
 .menu{
