@@ -10,219 +10,231 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <img src="DKS-polos.png" alt="Logo DKS" class="logo">
+            <ul class="menu">
+                <li class="menu-1">Multiple Dashboard</li>
+                <li class="menu-2">Notifikasi</li>
+                <li class="menu-3">Pendapatan</li>
+                <li class="menu-4">Pengeluaran</li>
+            </ul>
+        </nav>
 
-    <nav class="navbar">
-        <img src="DKS-polos.png" alt="Logo DKS" class="logo">
-        <ul class="menu">
-            <li class="menu-1">Multiple Dashboard</li>
-            <li class="menu-2">Notifikasi</li>
-            <li class="menu-3">Pendapatan</li>
-            <li class="menu-4">Pengeluaran</li>
-        </ul>
-    </nav>
+        <div class="welcome">Welcome to Dashboard Keuangan Sederhana</div>
+    </header>
 
-    <div class="welcome">Welcome to Dashboard Keuangan Sederhana</div>
+    <main>
+        <div class="wadah-kotak-saldo">
+            <div class="kotak kotak-biru">
+                <h3>Rp1.000.000</h3>
+                <h4>Saldo Anda</h4>
+                <p>19 May 2026</p>
+            </div>
 
-    <div class="wadah-kotak-saldo">
-        <div class="kotak kotak-biru">
-            <h3>Rp1.000.000</h3>
-            <h4>Saldo Anda</h4>
-            <p>19 May 2026</p>
+            <div class="kotak kotak-hijau">
+                <h3>Rp500.000</h3>
+                <h4>Pengeluaran Terbaru</h4>
+                <p>19 May 2026</p>
+            </div>
+
+            <div class="kotak kotak-oranye">
+                <h3>Rp0</h3>
+                <h4>Pengeluaran SPP Yang Belum Dibayar</h4>
+                <p>A.N Bambang Pamungkas</p>
+            </div>
+
+            <div class="kotak kotak-merah">
+                <h3>Rp2.000.000</h3>
+                <h4>Keseluruhan SPP Yang Sudah Dibayar</h4>
+                <p>A.N Bambang Pamungkas</p>
+            </div>
         </div>
 
-        <div class="kotak kotak-hijau">
-            <h3>Rp500.000</h3>
-            <h4>Pengeluaran Terbaru</h4>
-            <p>19 May 2026</p>
-        </div>
+        <div class="wadah-kotak-tabel-dan-grafik">
+            <div class="kotak tabel">
+                <table>
+                    <tr>
+                        <th>Nama Siswa</th>
+                        <th><select name="Kelas" id="kelas">
+                                <option value="kelas1">Kelas I</option>
+                                <option value="kelas2">Kelas II</option>
+                                <option value="kelas3">Kelas III</option>
+                                <option value="kelas4">Kelas IV</option>
+                                <option value="kelas5">Kelas V</option>
+                                <option value="kelas6">Kelas VI</option>
+                            </select></th>
+                        <th><select name="Tahun" id="tahun">
+                                <option value="tahun1">Tahun Ajaran 2025/2026</option>
+                                <option value="tahun2">Tahun Ajaran 2026/2027</option>
+                                <option value="tahun3">Tahun Ajaran 2027/2028</option>
+                            </select></th>
+                        <th><select name="Semester" id="semester">
+                                <option value="semesterganjil">Jumlah SPP Semester Ganjil</option>
+                                <option value="semestergenap">Jumlah SPP Semester Genap</option>
+                            </select></th>
+                        <th>Status Pembayaran</th>
+                    </tr>
+                    <tr>
+                        <td>Bambang Pamungkas</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Lunas</td>
+                    </tr>
+                    <tr>
+                        <td>Budi Hartono</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Lunas</td>
+                    </tr>
+                    <tr>
+                        <td>Laksana Hartanti</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Lunas</td>
+                    </tr>
+                    <tr>
+                        <td>Kurniawan</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Lunas</td>
+                    </tr>
+                    <tr>
+                        <td>Gilang Kartono</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Lunas</td>
+                    </tr>
 
-        <div class="kotak kotak-oranye">
-            <h3>Rp0</h3>
-            <h4>Pengeluaran SPP Yang Belum Dibayar</h4>
-            <p>A.N Bambang Pamungkas</p>
-        </div>
+                </table>
 
-        <div class="kotak kotak-merah">
-            <h3>Rp2.000.000</h3>
-            <h4>Keseluruhan SPP Yang Sudah Dibayar</h4>
-            <p>A.N Bambang Pamungkas</p>
-        </div>
-    </div>
+                <div class="pageination">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>next</p>
+                </div>
 
-    <div class="wadah-kotak-tabel-dan-grafik">
-        <div class="kotak tabel">
-            <table>
-                <tr>
-                    <th>Nama Siswa</th>
-                    <th><select name="Kelas" id="kelas">
-                            <option value="kelas1">Kelas I</option>
-                            <option value="kelas2">Kelas II</option>
-                            <option value="kelas3">Kelas III</option>
-                            <option value="kelas4">Kelas IV</option>
-                            <option value="kelas5">Kelas V</option>
-                            <option value="kelas6">Kelas VI</option>
-                        </select></th>
-                    <th><select name="Tahun" id="tahun">
-                            <option value="tahun1">Tahun Ajaran 2025/2026</option>
-                            <option value="tahun2">Tahun Ajaran 2026/2027</option>
-                            <option value="tahun3">Tahun Ajaran 2027/2028</option>
-                        </select></th>
-                    <th><select name="Semester" id="semester">
-                            <option value="semesterganjil">Jumlah SPP Semester Ganjil</option>
-                            <option value="semestergenap">Jumlah SPP Semester Genap</option>
-                        </select></th>
-                    <th>Status Pembayaran</th>
-                </tr>
-                <tr>
-                    <td>Bambang Pamungkas</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Lunas</td>
-                </tr>
-                <tr>
-                    <td>Budi Hartono</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Lunas</td>
-                </tr>
-                <tr>
-                    <td>Laksana Hartanti</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Lunas</td>
-                </tr>
-                <tr>
-                    <td>Kurniawan</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Lunas</td>
-                </tr>
-                <tr>
-                    <td>Gilang Kartono</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Lunas</td>
-                </tr>
+            </div>
 
-            </table>
-
-            <div class="pageination">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>next</p>
+            <div class="kotak grafik">
+                <p>
+                <h2>Status Pembayaran</h2>
+                </p>
+                <select name="Kelas" id="kelas">
+                    <option value="kelas1">Kelas I</option>
+                    <option value="kelas2">Kelas II</option>
+                    <option value="kelas3">Kelas III</option>
+                    <option value="kelas4">Kelas IV</option>
+                    <option value="kelas5">Kelas V</option>
+                    <option value="kelas6">Kelas VI</option>
+                </select>
+                <p><img src="Diagram-lingkaran.png" alt="Diagram Lingkaran" class="diagram-lingkaran"></p>
             </div>
 
         </div>
 
-        <div class="kotak grafik">
-            <p><h2>Status Pembayaran</h2></p>
-            <select name="Kelas" id="kelas">
-                <option value="kelas1">Kelas I</option>
-                <option value="kelas2">Kelas II</option>
-                <option value="kelas3">Kelas III</option>
-                <option value="kelas4">Kelas IV</option>
-                <option value="kelas5">Kelas V</option>
-                <option value="kelas6">Kelas VI</option>
-            </select>
-            <p><img src="Diagram-lingkaran.png" alt="Diagram Lingkaran" class="diagram-lingkaran"></p>
-        </div>
-
-    </div>
 
 
+        <div class="wadah-kotak-tabel-dan-grafik">
+            <div class="kotak grafik2">
+                <p>
+                <h2>Metode Pembayaran</h2>
+                </p>
+                <select name="Kelas" id="kelas">
+                    <option value="kelas1">Kelas I</option>
+                    <option value="kelas2">Kelas II</option>
+                    <option value="kelas3">Kelas III</option>
+                    <option value="kelas4">Kelas IV</option>
+                    <option value="kelas5">Kelas V</option>
+                    <option value="kelas6">Kelas VI</option>
+                </select>
+                <p><img src="Diagram-lingkaran2.png" alt="Diagram Lingkaran2" class="diagram-lingkaran2"></p>
+            </div>
 
-    <div class="wadah-kotak-tabel-dan-grafik">
-        <div class="kotak grafik2">
-            <p><h2>Metode Pembayaran</h2></p>
-            <select name="Kelas" id="kelas">
-                <option value="kelas1">Kelas I</option>
-                <option value="kelas2">Kelas II</option>
-                <option value="kelas3">Kelas III</option>
-                <option value="kelas4">Kelas IV</option>
-                <option value="kelas5">Kelas V</option>
-                <option value="kelas6">Kelas VI</option>
-            </select>
-            <p><img src="Diagram-lingkaran2.png" alt="Diagram Lingkaran2" class="diagram-lingkaran2"></p>
-        </div>
+            <div class="kotak tabel2">
+                <table>
+                    <tr>
+                        <th>Tanggal Transaksi
+                        <th>Nama Siswa</th>
+                        <th><select name="Kelas" id="kelas">
+                                <option value="kelas1">Kelas I</option>
+                                <option value="kelas2">Kelas II</option>
+                                <option value="kelas3">Kelas III</option>
+                                <option value="kelas4">Kelas IV</option>
+                                <option value="kelas5">Kelas V</option>
+                                <option value="kelas6">Kelas VI</option>
+                            </select></th>
+                        <th><select name="Tahun" id="tahun">
+                                <option value="tahun1">Tahun Ajaran 2025/2026</option>
+                                <option value="tahun2">Tahun Ajaran 2026/2027</option>
+                                <option value="tahun3">Tahun Ajaran 2027/2028</option>
+                            </select></th>
+                        <th>Jumlah Yang Dibayar</th>
+                        <th>Metode (Cash/Transfer)</th>
+                    </tr>
+                    <tr>
+                        <td>26 Mei 2026</td>
+                        <td>Bambang Pamungkas</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Cash</td>
+                    </tr>
+                    <tr>
+                        <td>20 April 2026</td>
+                        <td>Budi Hartono</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>15 Maret 2026</td>
+                        <td>Laksana Hartanti</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>10 Februari 2026</td>
+                        <td>Kurniawan</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Cash</td>
+                    </tr>
+                    <tr>
+                        <td>5 Januari 2026</td>
+                        <td>Gilang Kartono</td>
+                        <td>I</td>
+                        <td>2025/2026</td>
+                        <td>500.000</td>
+                        <td>Transfer</td>
+                    </tr>
 
-        <div class="kotak tabel2">
-            <table>
-                <tr>
-                    <th>Tanggal Transaksi
-                    <th>Nama Siswa</th>
-                    <th><select name="Kelas" id="kelas">
-                            <option value="kelas1">Kelas I</option>
-                            <option value="kelas2">Kelas II</option>
-                            <option value="kelas3">Kelas III</option>
-                            <option value="kelas4">Kelas IV</option>
-                            <option value="kelas5">Kelas V</option>
-                            <option value="kelas6">Kelas VI</option>
-                        </select></th>
-                    <th><select name="Tahun" id="tahun">
-                            <option value="tahun1">Tahun Ajaran 2025/2026</option>
-                            <option value="tahun2">Tahun Ajaran 2026/2027</option>
-                            <option value="tahun3">Tahun Ajaran 2027/2028</option>
-                        </select></th>
-                    <th>Jumlah Yang Dibayar</th>
-                    <th>Metode (Cash/Transfer)</th>
-                </tr>
-                <tr>
-                    <td>26 Mei 2026</td>
-                    <td>Bambang Pamungkas</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Cash</td>
-                </tr>
-                <tr>
-                    <td>20 April 2026</td>
-                    <td>Budi Hartono</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Transfer</td>
-                </tr>
-                <tr>
-                    <td>15 Maret 2026</td>
-                    <td>Laksana Hartanti</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Transfer</td>
-                </tr>
-                <tr>
-                    <td>10 Februari 2026</td>
-                    <td>Kurniawan</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Cash</td>
-                </tr>
-                <tr>
-                    <td>5 Januari 2026</td>
-                    <td>Gilang Kartono</td>
-                    <td>I</td>
-                    <td>2025/2026</td>
-                    <td>500.000</td>
-                    <td>Transfer</td>
-                </tr>
+                </table>
 
-            </table>
-
-            <div class="pageination">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>next</p>
+                <div class="pageination">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>next</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Dashboard Keuangan Sederhana. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>

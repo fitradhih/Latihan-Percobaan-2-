@@ -16,9 +16,8 @@ body {
     background-color: #ffffff; /* Sesuai namanya mengganti warna background color */
     color: rgb(92, 92, 92);       /* Warna teks */
     display: flex;               /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
-    padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
-    align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */
-    list-style: none;            /* Menghilangkan bullet points pada navbar jika menggunakan elemen list */  
+    padding: 2px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
+    align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */ 
 }
 
 .logo{
@@ -34,25 +33,21 @@ body {
 
 .menu-1{
     float: left; /* Membuat menu-1 berada di sebelah kiri */
-    list-style: none; /* Menghilangkan bullet points pada menu-1 jika menggunakan elemen list */
     margin: 0px 50px; /* Memberi jarak antara menu-1 dengan elemen lain */
 }
 
 .menu-2{
     float: left; /* Membuat menu-2 berada di sebelah kanan */
-    list-style: none; /* Menghilangkan bullet points pada menu-2 jika menggunakan elemen list */
     margin: 0px 50px; /* Memberi jarak antara menu-2 dengan elemen lain */
 }
 
 .menu-3{
     float: left; /* Membuat menu-3 berada di sebelah kanan */
-    list-style: none; /* Menghilangkan bullet points pada menu-3 jika menggunakan elemen list */
     margin: 0px 50px; /* Memberi jarak antara menu-3 dengan elemen lain */
 }
 
 .menu-4{
     float: left; /* Membuat menu-4 berada di sebelah kanan */
-    list-style: none; /* Menghilangkan bullet points pada menu-4 jika menggunakan elemen list */
     margin: 0px 50px; /* Memberi jarak antara menu-4 dengan elemen lain */
 }
 
@@ -198,3 +193,9 @@ th {
     float: left; /* Membuat tabel berada di sebelah kiri */
 }
 
+.copyright {
+    background-color: #1e3a8a; /* Sesuai namanya mengganti warna background color */
+    color: white;              /* Warna teks */
+    text-align: center;        /* Mengatur teks agar berada di tengah footer */
+    padding: 10px 20px;       /* Memberi ruang bernapas (jarak) di dalam footer */
+}
