@@ -13,13 +13,17 @@ body {
 }
 
 .navbar {
-    background-color: #ffffff; /* Sesuai namanya mengganti warna background color */
+    position: fixed;                /* Membuat navbar tetap di atas saat menggulir halaman */
+    width: 100%;                    /* Membuat navbar membentang penuh selebar halaman */
+    top: 0px;                       /* Menempelkan navbar ke bagian atas halaman */
+    z-index: 1000;                  /* Memberikan nilai z-index tinggi agar navbar tetap di atas elemen lain */
+    background-color: #ffffff;    /* Sesuai namanya mengganti warna background color */
     color: rgb(92, 92, 92);       /* Warna teks */
-    display: flex;               /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
-    padding: 2px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
-    align-items: center;         /* Mengatur agar logo dan teks berada di tengah secara vertikal */ 
-    font-weight: bold;           /* Membuat teks menjadi tebal/bold */
-    font-size: 16px;             /* Ukuran teks untuk navbar */
+    display: flex;                  /* Membuat navbar menjadi fleksibel untuk mengatur tata letak */
+    padding: 2px 20px;              /* Memberi ruang bernapas (jarak) di dalam navbar */
+    align-items: center;            /* Mengatur agar logo dan teks berada di tengah secara vertikal */ 
+    font-weight: bold;              /* Membuat teks menjadi tebal/bold */
+    font-size: 16px;                /* Ukuran teks untuk navbar */
 }
 
 .logo{
@@ -32,13 +36,13 @@ body {
     float: left; /* Membuat menu-5 berada di sebelah kanan */
     list-style: none; /* Menghilangkan bullet points pada menu-5 jika menggunakan elemen list */
     margin-left: auto; /* Memberi jarak antara menu-5 dengan elemen lain */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover pada menu-5 */
 }
 
 .menu-1{
     float: left; /* Membuat menu-1 berada di sebelah kiri */
     margin: 0px 50px; /* Memberi jarak antara menu-1 dengan elemen lain */
 }
-
 .menu-1:hover{
     font-size: 18px; /* Ukuran teks untuk menu-1 saat hover */
 }
@@ -47,7 +51,6 @@ body {
     float: left; /* Membuat menu-2 berada di sebelah kanan */
     margin: 0px 50px; /* Memberi jarak antara menu-2 dengan elemen lain */
 }
-
 .menu-2:hover{
     font-size: 18px; /* Ukuran teks untuk menu-2 saat hover */
 }
@@ -56,7 +59,6 @@ body {
     float: left; /* Membuat menu-3 berada di sebelah kanan */
     margin: 0px 50px; /* Memberi jarak antara menu-3 dengan elemen lain */
 }
-
 .menu-3:hover{
     font-size: 18px; /* Ukuran teks untuk menu-3 saat hover */
 }
@@ -65,13 +67,13 @@ body {
     float: left; /* Membuat menu-4 berada di sebelah kanan */
     margin: 0px 50px; /* Memberi jarak antara menu-4 dengan elemen lain */
 }
-
 .menu-4:hover{
     font-size: 18px; /* Ukuran teks untuk menu-4 saat hover */
 }
 
 .welcome {
     background-color: #354fc5; /* Sesuai namanya mengganti warna background color */
+    margin-top: 100px; /* Memberi jarak antara welcome dengan navbar */
     color: white;              /* Warna teks */
     padding: 15px 20px;          /* Memberi ruang bernapas (jarak) di dalam navbar */
     text-align: center;          /* Mengatur teks agar berada di tengah navbar */
@@ -92,14 +94,17 @@ body {
     align-items: stretch; /* Mengatur agar kotak-kotak berada di tengah secara vertikal */
     gap: 10px;       /* Memberi jarak antar kotak */
     flex-wrap: wrap; /* Biar kalau layarnya kekecilan, kotaknya turun otomatis */
-    margin: 20px 100px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
+    margin: 20px 30px; /* Memberi jarak vertikal antara wadah kotak dengan elemen lain */
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
 }
 
 .kotak {
     flex: 1;                                        /* Membuat setiap kotak punya lebar yang sama rata */
     min-width: 100px;                               /* Lebar minimal kotak agar tidak terlalu gepeng */
     padding: 20px;
-    margin: 20px;                                   /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    margin: 10px;                                   /* Memberi jarak vertikal antara kotak dengan elemen lain */
     border-radius: 20px;                            /* Membuat sudut kotak jadi agak melengkung/rounded */
     color: white;                                 /* Semua tulisan di dalam kotak berwarna putih */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
@@ -189,9 +194,10 @@ th {
 }
 
 .diagram-lingkaran{
-    width: 380px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    width: 100%; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    max-width: 400px;
     height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
-    margin-right: 150px; /* Memberi jarak antara diagram lingkaran dengan elemen lain */
+    margin-left: 10px; /* Memberi jarak antara diagram lingkaran dengan elemen lain */
 }
 
 .grafik2{
@@ -203,8 +209,11 @@ th {
 
 .diagram-lingkaran2{
     margin-left: 60px;
-    width: 300px; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
+    max-width: 300px;
+    width: 100%; /* Membuat diagram lingkaran membentang penuh selebar wadahnya */
     height: auto; /* Menyesuaikan tinggi diagram lingkaran auto */
+    justify-content: center;
+    align-content: center;
 }
 
 .tabel2{
@@ -219,4 +228,13 @@ th {
     color: white;              /* Warna teks */
     text-align: center;        /* Mengatur teks agar berada di tengah footer */
     padding: 10px 20px;       /* Memberi ruang bernapas (jarak) di dalam footer */
+}
+
+@media(max-width:1280px){
+    .diagram-lingkaran{
+        padding: 50px 30px 0 0;
+    }
+    .diagram-lingkaran2{
+        padding: 50px 80px 0 0;
+    }
 }
